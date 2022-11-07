@@ -18,7 +18,6 @@ view: employee {
     type:zipcode
     sql: ${TABLE}.Conuntry_Name ;;
   }
-
   dimension_group: doj {
     type: time
     timeframes: [
@@ -54,8 +53,18 @@ view: employee {
     sql: ${TABLE}.Salary ;;
   }
 
+  dimension :region{
+    type :string
+    sql:${TABLE}.region;;
+  }
+
+
   measure: count {
     type: count
     drill_fields: [id, conuntry_name, city_name, first_name_last_name]
+  }
+  measure: Average{
+    type: count
+    drill_fields: [salary]
   }
 }
