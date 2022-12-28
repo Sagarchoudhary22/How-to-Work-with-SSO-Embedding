@@ -1,8 +1,10 @@
-project_name: "demo_looker_extension"
+project_name: "mynewextension"
 
-# # Use local_dependency: To enable referencing of another project
-# # on this instance with include: statements
-#
-# local_dependency: {
-#   project: "name_of_other_project"
-# }
+application: mynewextension {
+  label: "mynewextension"
+  url: "https://localhost:8080/bundle.js"
+  # file: "bundle.js
+  entitlements: {
+    core_api_methods: ["me"] #Add more entitlements here as you develop new functionality
+  }
+}
