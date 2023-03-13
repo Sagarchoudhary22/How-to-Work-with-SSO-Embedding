@@ -15,6 +15,7 @@ view: employee {
   }
 
   dimension: conuntry_name {
+    map_layer_name: countries
     type:zipcode
     sql: ${TABLE}.Conuntry_Name ;;
   }
