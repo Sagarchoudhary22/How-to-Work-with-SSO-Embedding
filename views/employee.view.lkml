@@ -15,7 +15,7 @@ view: employee {
   }
 
   dimension: conuntry_name {
-    map_layer_name: countries
+    map_layer_name: us_counties_fips
     type:zipcode
     sql: ${TABLE}.Conuntry_Name ;;
   }
