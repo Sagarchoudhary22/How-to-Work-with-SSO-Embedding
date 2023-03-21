@@ -67,5 +67,6 @@ view: employee {
   measure: Average{
     type: count
     drill_fields: [salary]
-  }
+
+}
 }
