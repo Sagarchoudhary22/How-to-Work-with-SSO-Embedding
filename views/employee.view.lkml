@@ -7,6 +7,7 @@ view: employee {
     primary_key: yes
     type: number
     sql: ${TABLE}.ID ;;
+
   }
 
   dimension: city_name {

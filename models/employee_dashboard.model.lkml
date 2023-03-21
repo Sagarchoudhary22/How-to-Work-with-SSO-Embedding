@@ -4,16 +4,9 @@ connection: "employee_details_sagar_23"
 include: "/views/**/*.view"
 include: "/views/employee.view.lkml"
 
-datagroup: employee_dashboard {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
-}
-
-persist_with: employee_dashboard_default_datagroup
-
 datagroup: employee_dashboard_1 {
-  sql_trigger: SELECT MAX(id) FROM ID;;
-  max_cache_age: "5 minute"
+  sql_trigger: SELECT MAX(id) FROM employee;;
+  max_cache_age: "5 seconds"
 }
 
 persist_with: employee_dashboard_1
