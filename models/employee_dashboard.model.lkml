@@ -17,3 +17,5 @@ datagroup: employee_dashboard_1 {
 }
 
 persist_with: employee_dashboard_1
+
+explore: employee {}
