@@ -3,6 +3,7 @@ connection: "employee_details_sagar_23"
 # include all the views
 include: "/views/**/*.view"
 include: "/views/employee.view.lkml"
+include: "/car.dashboard.lookml"
 
 datagroup: employee_dashboard_1 {
   sql_trigger: SELECT MAX(id) FROM employee;;
